@@ -10,6 +10,7 @@
 // of common test cases
 //
 extern crate program;
+use program::{Game, Piece, Winner};
 
 // These are tests! Rust has testing built-in so you get a streamlined experience that encourages
 // you to write tests more often.
@@ -21,10 +22,7 @@ extern crate program;
 // which won't be run otherwise.
 #[cfg(test)]
 mod tests {
-    // This imports everything above so we get access to our Game, Winner, Piece, etc. types
-    use super::*;
-
-    //TODO: HELP WANTED. Please help us by writing more tests. These are not even close to
+    //TODO: Writing more tests. These are not even close to
     // exhaustive, but they are a good start!
 
     // This is a test! Just add #[test] to a regular function and Rust will find that function
