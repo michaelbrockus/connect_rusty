@@ -30,7 +30,7 @@ mod tests {
     fn col_3_o_wins() {
         // To test the game, we just have to create a game, play on it a bit, and then check
         // what happened
-        let mut game = Game::new();
+        let mut game = program::Game::new();
         // In tests, it is okay to "unwrap" and ignore errors. If something goes wrong, the test
         // will fail because unwrap will exit with an error
         // It can be helpful to use "expect" instead since with that you can provide a message
@@ -44,46 +44,46 @@ mod tests {
         // assert_eq! is a special macro (like `println!`) which checks if two things are equal
         // and then exits with an error if they are not. We use this to make sure game behaves
         // as we expect
-        assert_eq!(game.winner().unwrap(), Winner::O);
+        assert_eq!(game.winner().unwrap(), program::Winner::O);
     }
 
     #[test]
     fn diag_1_x_wins() {
-        let mut game = Game::new();
+        let mut game = program::Game::new();
         game.make_move(0, 0).unwrap();
         game.make_move(0, 1).unwrap();
         game.make_move(2, 2).unwrap();
         game.make_move(2, 1).unwrap();
         game.make_move(1, 1).unwrap();
-        assert_eq!(game.winner().unwrap(), Winner::X);
+        assert_eq!(game.winner().unwrap(), program::Winner::X);
     }
 
     #[test]
     fn diag_2_x_wins() {
-        let mut game = Game::new();
+        let mut game = program::Game::new();
         game.make_move(0, 2).unwrap();
         game.make_move(0, 1).unwrap();
         game.make_move(2, 0).unwrap();
         game.make_move(2, 1).unwrap();
         game.make_move(1, 1).unwrap();
-        assert_eq!(game.winner().unwrap(), Winner::X);
+        assert_eq!(game.winner().unwrap(), program::Winner::X);
     }
 
     #[test]
     fn row_2_o_wins() {
-        let mut game = Game::new();
+        let mut game = program::Game::new();
         game.make_move(0, 0).unwrap();
         game.make_move(1, 0).unwrap();
         game.make_move(2, 1).unwrap();
         game.make_move(1, 1).unwrap();
         game.make_move(0, 2).unwrap();
         game.make_move(1, 2).unwrap();
-        assert_eq!(game.winner().unwrap(), Winner::O);
+        assert_eq!(game.winner().unwrap(), program::Winner::O);
     }
 
     #[test]
     fn tie() {
-        let mut game = Game::new();
+        let mut game = program::Game::new();
         game.make_move(0, 0).unwrap();
         game.make_move(0, 1).unwrap();
         game.make_move(0, 2).unwrap();
@@ -93,6 +93,6 @@ mod tests {
         game.make_move(1, 0).unwrap();
         game.make_move(1, 2).unwrap();
         game.make_move(1, 1).unwrap();
-        assert_eq!(game.winner().unwrap(), Winner::Tie);
+        assert_eq!(game.winner().unwrap(), program::Winner::Tie);
     }
 }
