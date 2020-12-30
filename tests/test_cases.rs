@@ -10,7 +10,6 @@
 // of common test cases
 //
 extern crate program;
-use program::{Game, Piece, Winner};
 
 // These are tests! Rust has testing built-in so you get a streamlined experience that encourages
 // you to write tests more often.
