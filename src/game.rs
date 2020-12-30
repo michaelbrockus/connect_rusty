@@ -1,3 +1,9 @@
+//
+// file: game.rs
+// author: Michael Brockus
+// gmail: <michaelbrockus@gmail.com>
+//
+
 // This constant can be used to set the board size
 // Since Rust's arrays are fat pointers, you won't see this constant referred to again after the
 // we declare the type of Game. I mention this because if you were writing in a language like C,
