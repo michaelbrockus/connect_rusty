@@ -12,5 +12,5 @@ jobs:
     - uses: actions/setup-python@v2.2.1
       with:
         python-version: '3.9.x'
-    - run: cargo run
-
+    - run: cargo build
+    - run: cargo test
