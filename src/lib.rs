@@ -273,7 +273,7 @@ fn read_line() -> String {
 
     // read_line leaves the trailing newline on the string, so we remove it using truncate. By
     // modifying the string in place, we avoid copying its contents after it was just allocated.
-    let len_without_newline = input.trim_right().len();
+    let len_without_newline = input.trim_end().len();
     input.truncate(len_without_newline);
 
     // The last expression in a function is returned from that function. We want to return the
