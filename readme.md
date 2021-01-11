@@ -16,6 +16,12 @@ to be the first to form a horizontal, vertical, or diagonal line of four of one'
 discs. Connect Four is a solved game. The first player can always win by playing the
 right moves.
 
+## Program Preview
+
+* * *
+
+Please add an image for the user to see.
+
 ## Tooling information
 
 * * *
