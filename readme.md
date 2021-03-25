@@ -57,7 +57,7 @@ And finally we run this cool application:
 connect-rusty
 ```
 
-## Contact the developer
+## Join the community
 
 * * *
 
