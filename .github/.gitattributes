@@ -1,10 +1,9 @@
 *           text=auto
 
 # These files are text and should be normalized (convert crlf to lf)
-*.c               text
-*.h               text
+*.rs              text
 *.txt             text
 *.yml             text
-*.yaml            text
+*.toml            text
 *.md              text
 meson.build       text
