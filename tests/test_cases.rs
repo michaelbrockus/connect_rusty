@@ -9,7 +9,7 @@
 // project since its important to test once implementation against a set
 // of common test cases
 //
-extern crate program;
+extern crate package;
 
 // These are tests! Rust has testing built-in so you get a streamlined experience that encourages
 // you to write tests more often.
